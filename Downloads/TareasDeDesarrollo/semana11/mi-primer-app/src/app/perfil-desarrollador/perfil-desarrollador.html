@@ -1,0 +1,17 @@
+<div class="card">
+  <div class="card-header"></div>
+  <div class="card-content">
+    <div class="avatar">
+      <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Luis" alt="Avatar">
+    </div>
+    <h2>{{ nombre }}</h2>
+    <span class="badge">{{ rol }}</span>
+    <p>{{ descripcion }}</p>
+    
+    <div class="skills">
+      @for (skill of skills; track skill) {
+        <span class="skill-tag">{{ skill }}</span>
+      }
+    </div>
+  </div>
+</div>
